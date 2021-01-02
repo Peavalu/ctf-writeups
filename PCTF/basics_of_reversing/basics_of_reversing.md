@@ -12,8 +12,8 @@ Use your reverse engineering skills. Find out how the binary encrypted the flag 
 Flag will be in format: CC##-####-####-####
 
 ## Attached files
-- [crypto.exe](/crypto.exe)
-- [encrypted](/encrypted)
+- [crypto.exe](/PCTF/basics_of_reversing/crypto.exe)
+- [encrypted](/PCTF/basics_of_reversing/encrypted)
 
 ## Summary
 XOR Cipher where the key must be obtained via reversing, debugging or brute-forcing.
@@ -56,7 +56,7 @@ The **^** denotes an XOR operation between two bytes, which is what we suspected
 
 ![v1](images/a1.png)
 
-The inital value of **v1** is **0xA1**. Meaning that [ ` "a" ^ 0xA1 = 0xc0 ` and ` 0xc0 ^ 0xA1 = "a" ` ], also meaning that [ ` 0xe2 ^ 0xA1 = "C" ` and ` 0xe0 ^ 0xA3 = "C" ` ], as we know that the first two characters of the flag are "**C**" from the flag format. Knowing this we can now write a Python script that will find us the flag, which can be found [here](/decryption.py).
+The inital value of **v1** is **0xA1**. Meaning that [ ` "a" ^ 0xA1 = 0xc0 ` and ` 0xc0 ^ 0xA1 = "a" ` ], also meaning that [ ` 0xe2 ^ 0xA1 = "C" ` and ` 0xe0 ^ 0xA3 = "C" ` ], as we know that the first two characters of the flag are "**C**" from the flag format. Knowing this we can now write a Python script that will find us the flag, which can be found [here](/PCTF/basics_of_reversing/decryption.py).
 
 
 ## Bonus Solution
