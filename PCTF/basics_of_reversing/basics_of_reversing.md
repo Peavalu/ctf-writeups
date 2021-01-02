@@ -43,7 +43,7 @@ Experienced CTF players will intuitively already guess, that probably [XOR](http
 
 
 ## The Hash Function
-The **hash** function specifically seems to do the heavy lifting so we investigate further. We also note, that a reference is being passed to the hash function, which is most likely our string input. Lets take a look at the has function.
+The **hash** function specifically seems to do the heavy lifting so we investigate further. We also note, that a reference is being passed to the hash function, which is most likely our string input. Lets take a look at the hash function.
 
 ![Hash Function](images/hash.png)
 
