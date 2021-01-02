@@ -34,7 +34,7 @@ From observing this we can conclude that:
   2. The key seems to be incremented after each character (a = a => 0xc0 != 0xc2).
   3. The first **a** is always 0xc0, meaning that the key start is hard-coded.
 
-There is a way, however, to solve this challenge without reverse-engineering anything and simply assuming XOR cipher which will be detailed in the and as a bonus.
+There is a way, however, to solve this challenge without reverse-engineering anything and simply assuming XOR cipher which will be detailed in the bonus section.
 
 ## Reversing the executable using Ghidra
 Experienced CTF players will intuitively already guess, that probably [XOR](https://en.wikipedia.org/wiki/XOR_cipher) is at play here but we can verify by conducting static analysis on the executable using [Ghidra](https://ghidra-sre.org/). We can use the string ( `Insert value for encryption:` ) to find the main function of the application. Ghidra will attempt to decompile the main function for us.
