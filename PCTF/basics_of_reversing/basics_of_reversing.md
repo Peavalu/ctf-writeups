@@ -2,8 +2,6 @@
 ![date](https://img.shields.io/badge/date-30.12.2020-brightgreen.svg)  
 ![crypto category](https://img.shields.io/badge/category-reverse-lightgrey.svg)
 
-[![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/AcerCTF.svg?style=social&label=Follow%20%40AcerCTF)](https://twitter.com/AcerCTF)
-
 ## Description
 Our sofware engineer came up with this new revolutionary encryption algorithim and he used it to secure the flag. You have been given the encrypted flag and the application that was used to encrypt it.
 
